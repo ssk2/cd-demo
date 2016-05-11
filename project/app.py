@@ -8,13 +8,13 @@ app = Flask(__name__)
 
 def getExchangeRates():
     rates = []
-    response = urllib2.urlopen('http://api.fixer.io/latest')
-    data = response.read()
-    rdata = json.loads(data, parse_float=float)
-    rates.append( rdata['rates']['USD'] )
-    rates.append( rdata['rates']['GBP'] )
-    rates.append( rdata['rates']['HKD'] )
-    rates.append( rdata['rates']['AUD'] )
+    # response = urllib2.urlopen('http://api.fixer.io/latest')
+    # data = response.read()
+    # rdata = json.loads(data, parse_float=float)
+    rates.append( 0.15 )
+    rates.append( 0.25 )
+    rates.append( 0.30 )
+    rates.append( 0.20 )
     return rates
 
 @app.route("/")
