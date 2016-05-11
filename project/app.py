@@ -19,7 +19,7 @@ def getExchangeRates():
 
 @app.route("/")
 def index():
-    getExchangeRates()
+    rates = getExchangeRates()
     return render_template("index.html")
 
 if __name__ == "__main__":
