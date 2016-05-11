@@ -26,7 +26,7 @@
     "id": "apachecon-demo-app",
     "instances": 1,
     "labels": {
-        "HAPROXY_0_VHOST": "http://sunil-889-publicsl-781ifozhqg3z-1399492298.us-west-2.elb.amazonaws.com/",
+        "HAPROXY_0_VHOST": "sunil-889-publicsl-781ifozhqg3z-1399492298.us-west-2.elb.amazonaws.com",
         "HAPROXY_GROUP": "external",
         "lastChangedBy": "sunil@mesosphere.io"
     },
