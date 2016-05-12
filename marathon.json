@@ -1,34 +1,24 @@
 {
-    "container": {
-        "docker": {
-            "image": "ssk2/apachecon-demo:latest",
-            "network": "BRIDGE",
-            "portMappings": [
-                {
-                    "containerPort": 5000,
-                    "protocol": "tcp"
-                }
-            ]
-        },
-        "type": "DOCKER"
-    },
-    "cpus": 0.1,
-    "healthChecks": [
+  "id": "apachecon-demo",
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "ssk2/apachecon-demo:latest",
+      "network": "BRIDGE",
+      "portMappings": [
         {
-            "gracePeriodSeconds": 600,
-            "intervalSeconds": 30,
-            "maxConsecutiveFailures": 2,
-            "portIndex": 0,
-            "protocol": "TCP",
-            "timeoutSeconds": 10
+          "containerPort": 80,
+          "protocol": "tcp"
         }
-    ],
-    "id": "apachecon-demo-app",
-    "instances": 1,
-    "labels": {
-        "HAPROXY_0_VHOST": "sunil-889-publicsl-781ifozhqg3z-1399492298.us-west-2.elb.amazonaws.com",
-        "HAPROXY_GROUP": "external",
-        "lastChangedBy": "sunil@mesosphere.io"
-    },
-    "mem": 128
+      ]
+    }
+  },
+  "labels": {
+    "HAPROXY_0_VHOST": "sunil-889-publicsl-781ifozhqg3z-1399492298.us-west-2.elb.amazonaws.com",
+    "HAPROXY_GROUP": "external",
+    "lastChangedBy": "sunil@mesosphere.io"
+  },
+  "instances": 1,
+  "cpus": 0.1,
+  "mem": 128
 }
