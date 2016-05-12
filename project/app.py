@@ -20,7 +20,7 @@ def getExchangeRates():
 @app.route("/")
 def index():
     rates = getExchangeRates()
-    return render_template("index.html")
+    return render_template("index.html",**locals())
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=5000,debug=True)
