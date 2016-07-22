@@ -1,9 +1,9 @@
 {
-  "id": "apachecon-demo",
+  "id": "cd-demo",
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "ssk2/apachecon-demo:latest",
+      "image": "ssk2/cd-demo:latest",
       "network": "BRIDGE",
       "portMappings": [
         {
