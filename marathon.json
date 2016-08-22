@@ -14,7 +14,7 @@
     }
   },
   "labels": {
-    "HAPROXY_0_VHOST": "sunil-iwz-publicsl-7vjgvc09qaj1-254423544.us-west-2.elb.amazonaws.com",
+    "HAPROXY_0_VHOST": "sunil-7ks-publicsl-13f74pyih2c9b-494411618.us-west-2.elb.amazonaws.com",
     "HAPROXY_GROUP": "external",
     "lastChangedBy": "sunil@mesosphere.io"
   },
